@@ -25,7 +25,8 @@ body {
 #container {
 	width: 800px;
 	border: 1px solid white;
-	margin: 0 auto;
+	margin: 5px auto 0;
+
 }
 
 /********** Header Styles **********/
@@ -33,7 +34,13 @@ body {
 	width: 800px;
 	height: 100px;
 	background-color: #333;
+	margin-bottom: 10px;
 }
+
+#header h1 {
+	font-size: 6em;
+}
+
 
 /********** Nav Styles **********/
 #nav {
