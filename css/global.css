@@ -1,0 +1,168 @@
+/* CSS BY KEVIN REYNOLDS @ BADAS DESIGNS(badasdesign.com)*/
+/***** COLORS ****/
+
+/********** General Styles **********/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	text-transform: none;
+	font-variant: normal;
+	font-family: Helvetica, Arial, sans-serif;
+	list-style-type:none;
+	color:#fff;
+}
+
+body {
+	background-color: #666;
+}
+
+#container {
+	width: 800px;
+	border: 1px solid white;
+	margin: 0 auto;
+}
+
+/********** Header Styles **********/
+#header {
+	width: 800px;
+	height: 100px;
+	background-color: #333;
+}
+
+/********** Nav Styles **********/
+#nav {
+	width: 800px;
+	height: 20px;
+	background-color: #333;
+}
+
+#nav li {
+	float:left;
+	margin-left: 15px;
+	
+}
+
+.nav-msgbrd-fix  {
+	float:right !important;	
+	margin-right: 10px;
+}
+
+/*--------- NavPsudeo ---------*/
+#nav a.active {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#nav a:link{
+
+}
+
+#nav a:visited{
+
+}
+
+#nav a:hover{
+	text-decoration: underline;
+}
+
+#nav a:link{
+
+}
+
+/********** Content Styles **********/
+#content {
+	width: 800px;
+	height: 540px;
+	background-color: #333;
+	padding-top:20px;
+	margin-top:10px;
+}
+
+/*--------- SpecContent ---------*/
+#spec-content {
+	width: 700px;
+	height: 200px;
+	background-color: #999;
+	border: 1px solid #fff;
+	margin: 0 auto;
+
+}
+
+/*--------- News ---------*/
+#news {
+	float:left;
+	border: 1px solid #fff;
+	width: 387px;
+	height: 300px;
+	background-color: #999;
+	margin: 10px 0 0 50px;
+}
+
+#news h1 {
+	font-size: 1.5em;
+	border-bottom: 1px solid #fff;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+#news li {
+	font-size: 1.0em;
+	margin: 5px 0 0 10px;
+}
+/*--------- NavPsudeo ---------*/
+#news li:link{
+
+}
+
+#news li:visited{
+
+}
+
+#news li:hover{
+	background-color:#555;
+}
+
+#news li:link{
+
+}
+
+/*--------- calendar ---------*/
+#calendar {
+	float:left;
+	width: 300px;
+	height: 200px;
+	margin: 10px 0 0 10px;
+}
+
+/*************** Footer Styles *****************/
+#footer {
+	height: 25px;
+}
+
+#footer p {
+	font-size:0.7em;
+	color:#fff;
+}
+
+#footer a:link {
+	color:#fff;
+}
+
+#footer a:visited  {
+	color:#fff;
+}
+
+#footer a:hover {
+	color: #999;
+	text-decoration: underline;
+}
+
+#footer a:active {
+	color: #333;
+}
