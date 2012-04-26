@@ -5,6 +5,7 @@
 		<title>Lake Mary Hockey</title>
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<link rel="stylesheet" type="text/css" href="css/tab.css" media="screen" />
 		<link href="css/lightbox.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/dropdown.css" type="text/css" media="screen, projection"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -31,9 +32,9 @@
 	
 		<div id="nav">
 			<ul class="dropdown">
-				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				
-				<li><a href="standings.html">Standings</a>
+				<li><a class="active" href="standings.html">Standings</a>
         		<ul class="sub_menu">
         			 	<li><a href="#">Teams</a></li>
         			 	<li><a href="#">Players</a></li>
@@ -50,34 +51,64 @@
 		</div>
 		
 		<div id="content">
+				<ul id="menu" class="menu">
+			<li class="active"><a href="#description">Limerick One</a></li>
+			<li><a href="#usage">Limerick Two</a></li>
+			<li><a href="#download">Limerick Three</a></li>
+		</ul>
+		<div id="description" class="content">
+			<h2>Tab One</h2>
+			<p>
+				Tab1
+			</p>
+		</div>
+		<div id="usage" class="content">
+			<h2>Tab Two</h2>
+			<p>
+				NO IMPORTANT INFORMATION
+			</p>
+		</div>
+
+		<div id="download" class="content">
+				NO IMPORTANT INFORMATION
+		</div>
 		
-			<div id="spec-content">
-			
-				<a href="images/spec-content-full/lmhl-bcvschiefs-game1.jpg" 																	rel="lightbox[Game1]" title="Bone Crushers crush Chiefs in a 8 to 7 OT victory">
+		<ul id="menu2" class="menu">
+			<li class="active"><a href="#description2">Limerick One</a></li>
+			<li><a href="#usage2">Limerick Two</a></li>
+			<li><a href="#download2">Limerick Three</a></li>
+		</ul>
+		<div id="description2" class="content">
+			<h2>Limerick One</h2>
+			<p>
+				NO IMPORTANT INFORMATION
+			</p>
+		</div>
+		<div id="usage2" class="content">
+			<h2>Limerick Two</h2>
+			<p>
+				NO IMPORTANT INFORMATION
+			</p>
+		</div>
+
+		<div id="download2" class="content">
+			<h2>Limerick Three</h2>
+				NO IMPORTANT INFORMATION
+		</div>
 				
-					<img src="images/spec-content-preview/lmhl-bcvschiefs-game1(preview).jpg" alt="Game one bone crushers and 					Chiefs"/>
-				</a>
-
-				<h2> BoneCrushers Beat Chiefs!</h2>	
-				<p> In a stunning 8 to 7 overtime victory</p>	
-			</div>
-			
-			<div id="news">
-			<h1>News</h1>
-			<ol>
-				<li>Bone Crushers beat Chiefs 8 to 7(OT)</li>
-				<li class="even">First Game 4/25/12 8pm</li>
-				<li>Website Construction Underway all information is</li>
-				<li class="even">First Game 4/25/12 8pm</li>
-				<li>Website Construction Underway all information is</li>
-
-			</ol>
-			</div>
-			
-			<div id="calendar">
-<iframe src="https://www.google.com/calendar/embed?title=Lake%20Mary%20Hockey%20Schedule&amp;showTitle=0&amp;showNav=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=200&amp;wkst=1&amp;hl=en&amp;bgcolor=%23cccccc&amp;src=3nag0rq4bd1sdpaj5d1bth3bvk%40group.calendar.google.com&amp;color=%23FFFFFF&amp;ctz=America%2FNew_York" style=" border-width:0 " width="300" height="200" frameborder="0" scrolling="no"></iframe>
-
-			</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// <![CDATA[
+				
+			$(document).ready(function () {
+				$('#menu').tabify();
+				$('#menu2').tabify();
+			});
+					
+			// ]]>
+		</script>
+		
 		</div>
 		
 		<div id="footer"><!-- Start Footer -->
