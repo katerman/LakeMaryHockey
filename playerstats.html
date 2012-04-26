@@ -5,6 +5,7 @@
 		<title>Lake Mary Hockey</title>
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.tablesorter.pager.css" />
 		<link rel="stylesheet" type="text/css" href="css/tab.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/statsTabs.css"/>
 		<link href="css/lightbox.css" rel="stylesheet" />
@@ -21,15 +22,16 @@
 		<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>	
 		<script type="text/javascript" language="javascript" src="js/jquery.dropdownPlain.js"></script>
 
-	<script type="text/javascript" src="js/jquery-latest.js"></script>
-	<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
-	<script type="text/javascript" src="js/jquery.tablesorter.pager.js"></script>
-	<script type="text/javascript">
-	$(function() {
-		$("table")
+		<script type="text/javascript" src="js/jquery-latest.js"></script>
+		<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+		<script type="text/javascript" src="js/jquery.tablesorter.pager.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$("table")
 			.tablesorter({widthFixed: true, widgets: ['zebra']})
-	});
-	</script>
+			.tablesorterPager({container: $("#pager")});
+		});
+		</script>
 
 	</head>
 	
@@ -65,45 +67,23 @@
 			<div id="box">
 	
 				<ul id="menu">
-					<li><a href="#team1">Chiefs</a></li>
-					<li><a href="#team2">H-E DA</a></li>
-					<li><a href="#team3">WCBDFY</a></li>
-					<li><a href="#team4">BoneCrushers</a></li>
+					<li><a href="#team1">Players</a></li>
+					<li><a href="#team2">Goalies</a></li>
+
 				</ul><!-- e tab menu -->
 				
 				
 				<ul id="boxes">
 					
 					<li id="team1" class="box">
-						<h1>Chiefs</h1>
-		
-							<h2>Team</h2>
-							<table id="Chiefs-Team" class="tablesorter"> 
-								<thead> 
-									<tr> 
-									    <th>Wins</th> 
-									    <th>Loses</th> 
-									    <th>Ties &nbsp;&nbsp;</th> 
-									    <th>Points&nbsp;&nbsp;</th> 
-									</tr> 
-								</thead>
-								<tbody> 
-									<tr> 
-									    <td>0<!--Wins--></td> 
-									    <td>1<!--Loses--></td> 
-									    <td>0<!--Tied--></td> 								    
-									    <td>0<!--Points--></td> 
-									</tr> 
-									
-								</tbody>
-							</table>
-							
+
 							<h2>Players</h2>
-							<table id="Chiefs-Players" class="tablesorter"> 
+							<table id="Chiefs-Players" class="tablesorterPager tablesorter"> 
 								<thead> 
 								<tr> 
 								    <th>First Name</th> 
 								    <th>Last Name</th> 
+								    <th>Team</th>
 								    <th>Games Played &nbsp;&nbsp;</th> 
 								    <th>Goals &nbsp;&nbsp;</th> 
 								    <th>Assists&nbsp;&nbsp;&nbsp;</th> 
@@ -117,6 +97,7 @@
 								<tr> 
 								    <td>Spencer<!--firstname--></td> 
 								    <td>Glick<!--lastname--></td> 
+								    <td>Chiefs<!--Teams--></td> 
 								    <td>1<!--gamesPlay--></td> 								    
 								    <td>4<!--goals--></td> 
 								    <td>1<!--assists--></td> 
@@ -128,7 +109,8 @@
 								
 								<tr> 
 								    <td>Kyle<!--firstname--></td> 
-								    <td>Dechert<!--lastname--></td> 
+								    <td>Dechert<!--lastname--></td>
+								    <td>Chiefs<!--Teams--></td> 
 								    <td>1<!--gamesPlay--></td> 	
 								    <td>1<!--goals--></td> 
 								    <td>2<!--assists--></td> 
@@ -141,6 +123,7 @@
 								<tr> 
 								    <td>Charles<!--firstname--></td> 
 								    <td>De Jager<!--lastname--></td> 
+								    <td>Chiefs<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -153,6 +136,7 @@
 								<tr> 
 								    <td>Jordan<!--firstname--></td> 
 								    <td>De Jager<!--lastname--></td> 
+								    <td>Chiefs<!--Teams--></td>
    								    <td>0<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -165,6 +149,7 @@
 								<tr> 
 								    <td>Rob<!--firstname--></td> 
 								    <td>Verbycke<!--lastname--></td> 
+								    <td>Chiefs<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -177,6 +162,7 @@
 								<tr> 
 								    <td>Bret<!--firstname--></td> 
 								    <td>Lambert<!--lastname--></td> 
+								    <td>Chiefs<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>2<!--goals--></td> 
 								    <td>2<!--assists--></td> 
@@ -189,6 +175,7 @@
 								<tr> 
 								    <td>Lucas<!--firstname--></td> 
 								    <td>Casas<!--lastname--></td> 
+								    <td>Chiefs<!--Teams--></td>
    								    <td>0<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -201,6 +188,7 @@
 								<tr> 
 								    <td>Clifford<!--firstname--></td> 
 								    <td>Denny<!--lastname--></td> 
+								    <td>Chiefs<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>1<!--assists--></td> 
@@ -209,232 +197,11 @@
 								    <td>0<!--gtg--></td> 
 								    <td>0<!--gwg--></td> 
 								</tr> 
-								</tbody> 
-							</table> 
-							
-							<h2>Goalies</h2>
-							<table id="Cheifs-Goalies" class="tablesorter"> 
-								<thead> 
-									<tr> 
-									    <th>First Name</th> 
-									    <th>Last Name</th> 
-									    <th>Games Played &nbsp;&nbsp;</th> 
-									    <th>Wins&nbsp;&nbsp;</th> 
-	   								    <th>Loses&nbsp;&nbsp;</th> 
-									    <th>Goals Against &nbsp;&nbsp;</th> 
-									    <th>Save %&nbsp;&nbsp;&nbsp;</th> 
-									    <th>Assists&nbsp;&nbsp;&nbsp;&nbsp;</th> 
-									    <th>PIMs&nbsp;&nbsp;&nbsp;&nbsp;</th>
-									</tr> 
-								</thead>
-								<tbody> 
-									<tr> 
-									    <td>Alex<!--firstname--></td> 
-									    <td>De Jager<!--lastname--></td> 
-									    <td>1<!--gamesPlay--></td> 								    
-									    <td>0<!--Wins--></td> 
-									    <td>1<!--Loses--></td> 
-									    <td>8<!--GAA--></td> 
-									    <td>N/A<!--Save%--></td>
-										<td>0<!--Assists--></td> 
-									    <td>0<!--Pims--></td>  
-									</tr> 
-									
-								</tbody>
-							</table>
 								
-					<span></span>
-					</li>
-					<li id="team2" class="box">
-						<h2>H-E Double Awesome</h2>
-						<h3>Team</h3>
-							<table id="H-ETeam" class="tablesorter"> 
-								<thead> 
-									<tr> 
-									    <th>Wins</th> 
-									    <th>Loses</th> 
-									    <th>Ties &nbsp;&nbsp;</th> 
-									    <th>Points&nbsp;&nbsp;</th> 
-									</tr> 
-								</thead>
-								<tbody> 
-									<tr> 
-									    <td>0<!--Wins--></td> 
-									    <td>0<!--Loses--></td> 
-									    <td>0<!--Tied--></td> 								    
-									    <td>0<!--Points--></td> 
-									</tr> 
-									
-								</tbody>
-							</table>
-							
-						<h3>Players</h3>
-							<table id="H-EPlayers" class="tablesorter"> 
-								<thead> 
-								<tr> 
-								    <th>First Name</th> 
-								    <th>Last Name</th> 
-								    <th>Games Played &nbsp;&nbsp;</th> 
-								    <th>Goals &nbsp;&nbsp;</th> 
-								    <th>Assists&nbsp;&nbsp;&nbsp;</th> 
-								    <th>Points&nbsp;&nbsp;&nbsp;&nbsp;</th> 
-								    <th>PIMs&nbsp;&nbsp;&nbsp;&nbsp;</th>
-								    <th>GTG&nbsp;&nbsp;&nbsp;&nbsp;</th>
-									<th>GWG&nbsp;&nbsp;&nbsp;&nbsp;</th>
-								</tr> 
-								</thead> 
-								<tbody> 
-								<tr> 
-								    <td>Christopher<!--firstname--></td> 
-								    <td>Lind<!--lastname--></td> 
-								    <td>0<!--gamesPlay--></td> 						
-								    <td>0<!--goals--></td> 
-								    <td>0<!--assists--></td> 
-								    <td>0<!--points--></td> 
-								    <td>0<!--pims--></td> 
-								    <td>0<!--gtg--></td> 
-								    <td>0<!--gwg--></td> 
-								</tr> 
-								
-								<tr> 
-								    <td>Nelson<!--firstname--></td> 
-								    <td>Peebles<!--lastname--></td> 
-								    <td>0<!--gamesPlay--></td> 	
-								    <td>0<!--goals--></td> 
-								    <td>0<!--assists--></td> 
-								    <td>0<!--points--></td> 
-								    <td>0<!--pims--></td> 
-								    <td>0<!--gtg--></td> 
-								    <td>0<!--gwg--></td> 
-								</tr> 
-								
-								<tr> 
-								    <td>Matt<!--firstname--></td> 
-								    <td>Lind<!--lastname--></td> 
-   								    <td>0<!--gamesPlay--></td> 	
-								    <td>0<!--goals--></td> 
-								    <td>0<!--assists--></td> 
-								    <td>0<!--points--></td> 
-								    <td>0<!--pims--></td> 
-								    <td>0<!--gtg--></td> 
-								    <td>0<!--gwg--></td> 
-								</tr> 
-								
-								<tr> 
-								    <td>Mike<!--firstname--></td> 
-								    <td>Bence<!--lastname--></td> 
-   								    <td>0<!--gamesPlay--></td> 	
-								    <td>0<!--goals--></td> 
-								    <td>0<!--assists--></td> 
-								    <td>0<!--points--></td> 
-								    <td>0<!--pims--></td> 
-								    <td>0<!--gtg--></td> 
-								    <td>0<!--gwg--></td> 
-								</tr> 
-							
-								<tr> 
-								    <td>Ryan<!--firstname--></td> 
-								    <td>Kusev<!--lastname--></td> 
-   								    <td>0<!--gamesPlay--></td> 	
-								    <td>0<!--goals--></td> 
-								    <td>0<!--assists--></td> 
-								    <td>0<!--points--></td> 
-								    <td>0<!--pims--></td> 
-								    <td>0<!--gtg--></td> 
-								    <td>0<!--gwg--></td> 
-								</tr> 
-								
-								<tr> 
-								    <td>Micah<!--firstname--></td> 
-								    <td>Salmon<!--lastname--></td> 
-   								    <td>0<!--gamesPlay--></td> 	
-								    <td>0<!--goals--></td> 
-								    <td>0<!--assists--></td> 
-								    <td>0<!--points--></td> 
-								    <td>0<!--pims--></td> 
-								    <td>0<!--gtg--></td> 
-								    <td>0<!--gwg--></td> 
-								</tr> 
-								</tbody> 
-							</table> 
-							
-							<h2>Goalies</h2>
-							<table id="H-EGoalies" class="tablesorter"> 
-								<thead> 
-									<tr> 
-									    <th>First Name</th> 
-									    <th>Last Name</th> 
-									    <th>Games Played &nbsp;&nbsp;</th> 
-									    <th>Wins&nbsp;&nbsp;</th> 
-	   								    <th>Loses&nbsp;&nbsp;</th> 
-									    <th>Goals Against &nbsp;&nbsp;</th> 
-									    <th>Save %&nbsp;&nbsp;&nbsp;</th> 
-									    <th>Assists&nbsp;&nbsp;&nbsp;&nbsp;</th> 
-									    <th>PIMs&nbsp;&nbsp;&nbsp;&nbsp;</th>
-									</tr> 
-								</thead>
-								<tbody> 
-									<tr> 
-									    <td>Adam<!--firstname--></td> 
-									    <td>Hale<!--lastname--></td> 
-									    <td>0<!--gamesPlay--></td> 								    
-									    <td>0<!--Wins--></td> 
-									    <td>0<!--Loses--></td> 
-									    <td>0<!--GAA--></td> 
-									    <td>N/A<!--Save%--></td>
-										<td>0<!--Assists--></td> 
-									    <td>0<!--Pims--></td>  
-									</tr> 
-									
-								</tbody>
-							</table>
-								
-						<span></span>	
-					</li>
-					
-					
-					<li id="team3" class="box">
-						<h2>What Can't Brown do for you</h2>
-						<h3>Team</h3>
-							<table id="WCBDFYTeam" class="tablesorter"> 
-								<thead> 
-									<tr> 
-									    <th>Wins</th> 
-									    <th>Loses</th> 
-									    <th>Ties &nbsp;&nbsp;</th> 
-									    <th>Points&nbsp;&nbsp;</th> 
-									</tr> 
-								</thead>
-								<tbody> 
-									<tr> 
-									    <td>0<!--Wins--></td> 
-									    <td>0<!--Loses--></td> 
-									    <td>0<!--Tied--></td> 								    
-									    <td>0<!--Points--></td> 
-									</tr> 
-									
-								</tbody>
-							</table>
-							
-						<h3>Players</h3>
-							<table id="WCBDFYPlayers" class="tablesorter"> 
-								<thead> 
-								<tr> 
-								    <th>First Name</th> 
-								    <th>Last Name</th> 
-								    <th>Games Played &nbsp;&nbsp;</th> 
-								    <th>Goals &nbsp;&nbsp;</th> 
-								    <th>Assists&nbsp;&nbsp;&nbsp;</th> 
-								    <th>Points&nbsp;&nbsp;&nbsp;&nbsp;</th> 
-								    <th>PIMs&nbsp;&nbsp;&nbsp;&nbsp;</th>
-								    <th>GTG&nbsp;&nbsp;&nbsp;&nbsp;</th>
-									<th>GWG&nbsp;&nbsp;&nbsp;&nbsp;</th>
-								</tr> 
-								</thead> 
-								<tbody> 
 								<tr> 
 								    <td>Jason<!--firstname--></td> 
 								    <td>Hunchuck<!--lastname--></td> 
+								    <td>WCBDFY<!--Teams--></td>
 								    <td>0<!--gamesPlay--></td> 						
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -446,7 +213,8 @@
 								
 								<tr> 
 								    <td>Justin<!--firstname--></td> 
-								    <td>Hunchuck<!--lastname--></td> 
+								    <td>Hunchuck<!--lastname--></td>
+								    <td>WCBDFY<!--Teams--></td> 
 								    <td>0<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -459,6 +227,7 @@
 								<tr> 
 								    <td>Joe<!--firstname--></td> 
 								    <td>Hunchuck<!--lastname--></td> 
+								    <td>WCBDFY<!--Teams--></td>
    								    <td>0<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -471,6 +240,7 @@
 								<tr> 
 								    <td>Mark<!--firstname--></td> 
 								    <td>Maylander<!--lastname--></td> 
+								    <td>WCBDFY<!--Teams--></td>
    								    <td>0<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -483,6 +253,7 @@
 								<tr> 
 								    <td>Michael<!--firstname--></td> 
 								    <td>Fiumara<!--lastname--></td> 
+								    <td>WCBDFY<!--Teams--></td>
    								    <td>0<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -495,6 +266,7 @@
 								<tr> 
 								    <td>Jason<!--firstname--></td> 
 								    <td>O'Toole<!--lastname--></td> 
+								    <td>WCBDFY<!--Teams--></td>
    								    <td>0<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -507,6 +279,7 @@
 								<tr> 
 								    <td>Chris<!--firstname--></td> 
 								    <td>Nelson<!--lastname--></td> 
+								    <td>WCBDFY<!--Teams--></td>
    								    <td>0<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -514,90 +287,12 @@
 								    <td>0<!--pims--></td> 
 								    <td>0<!--gtg--></td> 
 								    <td>0<!--gwg--></td> 
-								</tr> 
+								</tr> 	
 								
-								</tbody> 
-							</table> 
-							
-							<h2>Goalies</h2>
-							<table id="WCBDFYGoalies" class="tablesorter"> 
-								<thead> 
-									<tr> 
-									    <th>First Name</th> 
-									    <th>Last Name</th> 
-									    <th>Games Played &nbsp;&nbsp;</th> 
-									    <th>Wins&nbsp;&nbsp;</th> 
-	   								    <th>Loses&nbsp;&nbsp;</th> 
-									    <th>Goals Against &nbsp;&nbsp;</th> 
-									    <th>Save %&nbsp;&nbsp;&nbsp;</th> 
-									    <th>Assists&nbsp;&nbsp;&nbsp;&nbsp;</th> 
-									    <th>PIMs&nbsp;&nbsp;&nbsp;&nbsp;</th>
-									</tr> 
-								</thead>
-								<tbody> 
-									<tr> 
-									    <td>N/a<!--firstname--></td> 
-									    <td>N/a<!--lastname--></td> 
-									    <td>0<!--gamesPlay--></td> 								    
-									    <td>0<!--Wins--></td> 
-									    <td>0<!--Loses--></td> 
-									    <td>0<!--GAA--></td> 
-									    <td>N/A<!--Save%--></td>
-										<td>0<!--Assists--></td> 
-									    <td>0<!--Pims--></td>  
-									</tr> 
-									
-								</tbody>
-							</table>
-								
-						<span></span>	
-					</li>
-					
-					
-					
-					<li id="team4" class="box">
-							<h1>Bone Crushers</h1>
-		
-							<h2>Team</h2>
-							<table id="Bonecrushers-Team" class="tablesorter"> 
-								<thead> 
-									<tr> 
-									    <th>Wins</th> 
-									    <th>Loses</th> 
-									    <th>Ties &nbsp;&nbsp;</th> 
-									    <th>Points&nbsp;&nbsp;</th> 
-									</tr> 
-								</thead>
-								<tbody> 
-									<tr> 
-									    <td>1<!--Wins--></td> 
-									    <td>0<!--Loses--></td> 
-									    <td>0<!--Tied--></td> 								    
-									    <td>2<!--Points--></td> 
-									</tr> 
-									
-								</tbody>
-							</table>
-							
-							<h2>Players</h2>
-							<table id="Bonecrushers-Players" class="tablesorter"> 
-								<thead> 
-								<tr> 
-								    <th>First Name</th> 
-								    <th>Last Name</th> 
-								    <th>Games Played &nbsp;&nbsp;</th> 
-								    <th>Goals &nbsp;&nbsp;</th> 
-								    <th>Assists&nbsp;&nbsp;&nbsp;</th> 
-								    <th>Points&nbsp;&nbsp;&nbsp;&nbsp;</th> 
-								    <th>PIMs&nbsp;&nbsp;&nbsp;&nbsp;</th>
-								    <th>GTG&nbsp;&nbsp;&nbsp;&nbsp;</th>
-									<th>GWG&nbsp;&nbsp;&nbsp;&nbsp;</th>
-								</tr> 
-								</thead> 
-								<tbody> 
 								<tr> 
 								    <td>Anthony<!--firstname--></td> 
 								    <td>Farrell<!--lastname--></td> 
+								    <td>BoneCrushers<!--Teams--></td>
 								    <td>1<!--gamesPlay--></td> 						
 								    <td>3<!--goals--></td> 
 								    <td>2<!--assists--></td> 
@@ -610,6 +305,7 @@
 								<tr> 
 								    <td>Steve<!--firstname--></td> 
 								    <td>Gernez<!--lastname--></td> 
+								    <td>BoneCrushers<!--Teams--></td>
 								    <td>1<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>3<!--assists--></td> 
@@ -622,6 +318,7 @@
 								<tr> 
 								    <td>Alan<!--firstname--></td> 
 								    <td>Cravey<!--lastname--></td> 
+								    <td>BoneCrushers<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -634,6 +331,7 @@
 								<tr> 
 								    <td>Taylor<!--firstname--></td> 
 								    <td>Redman<!--lastname--></td> 
+								    <td>BoneCrushers<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -646,6 +344,7 @@
 								<tr> 
 								    <td>Chris<!--firstname--></td> 
 								    <td>Carson<!--lastname--></td> 
+								    <td>BoneCrushers<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>1<!--goals--></td> 
 								    <td>1<!--assists--></td> 
@@ -658,6 +357,7 @@
 								<tr> 
 								    <td>Josh<!--firstname--></td> 
 								    <td>Morris<!--lastname--></td> 
+								    <td>BoneCrushers<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>2<!--goals--></td> 
 								    <td>3<!--assists--></td> 
@@ -670,6 +370,7 @@
 								<tr> 
 								    <td>Chris<!--firstname--></td> 
 								    <td>Sardinia<!--lastname--></td> 
+								    <td>BoneCrushers<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>2<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -682,6 +383,7 @@
 								<tr> 
 								    <td>Kyle<!--firstname--></td> 
 								    <td>Zeigler<!--lastname--></td> 
+								    <td>BoneCrushers<!--Teams--></td>
    								    <td>1<!--gamesPlay--></td> 	
 								    <td>0<!--goals--></td> 
 								    <td>0<!--assists--></td> 
@@ -689,46 +391,188 @@
 								    <td>0<!--pims--></td> 
 								    <td>0<!--gtg--></td> 
 								    <td>0<!--gwg--></td> 
+								</tr> 		
+								
+								<!-- H-E DOUBLE AWESOME-->
+								<tr> 
+								    <td>Christopher<!--firstname--></td> 
+								    <td>Lind<!--lastname--></td> 
+  								    <td>H-E DA<!--Teams--></td>
+								    <td>0<!--gamesPlay--></td> 						
+								    <td>0<!--goals--></td> 
+								    <td>0<!--assists--></td> 
+								    <td>0<!--points--></td> 
+								    <td>0<!--pims--></td> 
+								    <td>0<!--gtg--></td> 
+								    <td>0<!--gwg--></td> 
 								</tr> 
+								
+								<tr> 
+								    <td>Nelson<!--firstname--></td> 
+								    <td>Peebles<!--lastname--></td> 
+  								    <td>H-E DA<!--Teams--></td>
+								    <td>0<!--gamesPlay--></td> 	
+								    <td>0<!--goals--></td> 
+								    <td>0<!--assists--></td> 
+								    <td>0<!--points--></td> 
+								    <td>0<!--pims--></td> 
+								    <td>0<!--gtg--></td> 
+								    <td>0<!--gwg--></td> 
+								</tr> 
+								
+								<tr> 
+								    <td>Matt<!--firstname--></td> 
+								    <td>Lind<!--lastname--></td> 
+								    <td>H-E DA<!--Teams--></td>
+   								    <td>0<!--gamesPlay--></td> 	
+								    <td>0<!--goals--></td> 
+								    <td>0<!--assists--></td> 
+								    <td>0<!--points--></td> 
+								    <td>0<!--pims--></td> 
+								    <td>0<!--gtg--></td> 
+								    <td>0<!--gwg--></td> 
+								</tr> 
+								
+								<tr> 
+								    <td>Mike<!--firstname--></td> 
+								    <td>Bence<!--lastname--></td>
+  								    <td>H-E DA<!--Teams--></td> 
+   								    <td>0<!--gamesPlay--></td> 	
+								    <td>0<!--goals--></td> 
+								    <td>0<!--assists--></td> 
+								    <td>0<!--points--></td> 
+								    <td>0<!--pims--></td> 
+								    <td>0<!--gtg--></td> 
+								    <td>0<!--gwg--></td> 
+								</tr> 
+							
+								<tr> 
+								    <td>Ryan<!--firstname--></td> 
+								    <td>Kusev<!--lastname--></td> 
+								    <td>H-E DA<!--Teams--></td>
+   								    <td>0<!--gamesPlay--></td> 	
+								    <td>0<!--goals--></td> 
+								    <td>0<!--assists--></td> 
+								    <td>0<!--points--></td> 
+								    <td>0<!--pims--></td> 
+								    <td>0<!--gtg--></td> 
+								    <td>0<!--gwg--></td> 
+								</tr> 
+								
+								<tr> 
+								    <td>Micah<!--firstname--></td> 
+								    <td>Salmon<!--lastname--></td> 
+  								    <td>H-E DA<!--Teams--></td>
+   								    <td>0<!--gamesPlay--></td> 	
+								    <td>0<!--goals--></td> 
+								    <td>0<!--assists--></td> 
+								    <td>0<!--points--></td> 
+								    <td>0<!--pims--></td> 
+								    <td>0<!--gtg--></td> 
+								    <td>0<!--gwg--></td> 
+								</tr> 
+					
+								
 								</tbody> 
 							</table> 
-							
-							<h2>Goalies</h2>
-							<table id="Bonecrushers-Goalies" class="tablesorter"> 
-								<thead> 
-									<tr> 
-									    <th>First Name</th> 
-									    <th>Last Name</th> 
-									    <th>Games Played &nbsp;&nbsp;</th> 
-									    <th>Wins&nbsp;&nbsp;</th> 
-	   								    <th>Loses&nbsp;&nbsp;</th> 
-									    <th>Goals Against &nbsp;&nbsp;</th> 
-									    <th>Save %&nbsp;&nbsp;&nbsp;</th> 
-									    <th>Assists&nbsp;&nbsp;&nbsp;&nbsp;</th> 
-									    <th>PIMs&nbsp;&nbsp;&nbsp;&nbsp;</th>
-									</tr> 
-								</thead>
-								<tbody> 
-									<tr> 
-									    <td>Mike<!--firstname--></td> 
-									    <td>Ruch<!--lastname--></td> 
-									    <td>1<!--gamesPlay--></td> 								    
-									    <td>1<!--Wins--></td> 
-									    <td>0<!--Loses--></td> 
-									    <td>7<!--GAA--></td> 
-									    <td>N/A<!--Save%--></td>
-										<td>0<!--Assists--></td> 
-									    <td>0<!--Pims--></td>  
-									</tr> 
-									
-								</tbody>
-							</table>
-								
-						<span></span>
+							<div id="pager" class="pager">
+								<form>
+									<img src="images//icons/first.png" class="first"/>
+									<img src="images/icons/prev.png" class="prev"/>
+									<!--<input type="text" class="pagedisplay"/>-->
+									<img src="images/icons/next.png" class="next"/>
+									<img src="images/icons/last.png" class="last"/>
+									<select class="pagesize">
+										<option value="5">5</option>
+										<option selected="selected" value="10">10</option>		
+										<option value="15">15</option>
+									</select>
+								</form>
+							</div>
+
+					<span></span>
 					</li>
-	
+					<li id="team2" class="box">
+						<h3>Goalies</h3>
+						<table id="GoalieStats" class="tablesorterPager tablesorter"> 
+						
+							<thead> 
+								<tr> 
+								    <th>First Name</th> 
+								    <th>Last Name</th> 
+								    <th>Team</th>
+								    <th>Games Played &nbsp;&nbsp;</th> 
+								    <th>Wins&nbsp;&nbsp;</th> 
+									<th>Loses&nbsp;&nbsp;</th> 
+								    <th>Goals Against &nbsp;&nbsp;</th> 
+								    <th>Save %&nbsp;&nbsp;&nbsp;</th> 
+								    <th>Assists&nbsp;&nbsp;&nbsp;&nbsp;</th> 
+								    <th>PIMs&nbsp;&nbsp;&nbsp;&nbsp;</th>
+								</tr> 
+							</thead>
+							
+							<tbody>
+							<tr> 
+							    <td>Alex<!--firstname--></td> 
+							    <td>De Jager<!--lastname--></td> 
+							    <td>Chiefs<!--Teams--></td>
+							    <td>1<!--gamesPlay--></td> 								    
+							    <td>0<!--Wins--></td> 
+							    <td>1<!--Loses--></td> 
+							    <td>8<!--GAA--></td> 
+							    <td>N/A<!--Save%--></td>
+								<td>0<!--Assists--></td> 
+							    <td>0<!--Pims--></td>  
+							</tr> 
+							
+							<tr> 
+							    <td>Adam<!--firstname--></td> 
+							    <td>Hale<!--lastname--></td> 
+							    <td>H-E DA<!--Teams--></td>
+							    <td>0<!--gamesPlay--></td> 								    
+							    <td>0<!--Wins--></td> 
+							    <td>0<!--Loses--></td> 
+							    <td>0<!--GAA--></td> 
+							    <td>N/A<!--Save%--></td>
+								<td>0<!--Assists--></td> 
+							    <td>0<!--Pims--></td>  
+							</tr> 
+							
+							<tr> 
+							    <td>N/a<!--firstname--></td> 
+							    <td>N/a<!--lastname--></td> 
+							    <td>WCBDFY<!--Teams--></td>
+							    <td>0<!--gamesPlay--></td> 								    
+							    <td>0<!--Wins--></td> 
+							    <td>0<!--Loses--></td> 
+							    <td>0<!--GAA--></td> 
+							    <td>N/A<!--Save%--></td>
+								<td>0<!--Assists--></td> 
+							    <td>0<!--Pims--></td>  
+							</tr> 
+							
+							<tr> 
+							    <td>Mike<!--firstname--></td> 
+							    <td>Ruch<!--lastname--></td> 
+  							    <td>BoneCrushers<!--Teams--></td>
+							    <td>1<!--gamesPlay--></td> 								    
+							    <td>1<!--Wins--></td> 
+							    <td>0<!--Loses--></td> 
+							    <td>7<!--GAA--></td> 
+							    <td>N/A<!--Save%--></td>
+								<td>0<!--Assists--></td> 
+							    <td>0<!--Pims--></td>  
+							</tr> 
+							</tbody>
+						</table>
+							
+						<span></span>	
+						
+					</li>
+						
 					
-				</ul><!-- e: boxes -->
+				</ul><!-- e: boxes -->	
+				
 			</div>
 		</div><!--endcontent-->
 		
