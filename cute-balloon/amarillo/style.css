@@ -1,0 +1,88 @@
+table.cute-balloon-yellow
+{
+	color:#444;
+	border:0;
+	background:none;
+}
+
+table.cute-balloon-yellow td
+{
+}
+
+table.cute-balloon-yellow span
+{
+}
+
+table.cute-balloon-yellow td img
+{
+}
+
+table.cute-balloon-yellow span.noroeste
+{
+    background:url(no.png) no-repeat;
+    width:28px;
+    height:35px;
+}
+
+table.cute-balloon-yellow span.noreste
+{
+    background:url(ne.png) no-repeat;
+    width:28px;
+    height:35px;
+}
+
+table.cute-balloon-yellow span.sureste
+{
+    background:url(se.png) no-repeat;
+    width:28px;
+    height:54px;
+}
+
+table.cute-balloon-yellow span.suroeste
+{
+    background:url(so.png) no-repeat;
+    width:28px;
+    height:54px;
+}
+
+table.cute-balloon-yellow td.norte
+{
+    background:url(norte.png) repeat-x;
+    height:35px;
+}
+
+table.cute-balloon-yellow td.este
+{
+    background:url(este.png) repeat-y;
+}
+
+table.cute-balloon-yellow td.oeste
+{
+    background:url(oeste.png) repeat-y;
+}
+
+table.cute-balloon-yellow td.sur
+{
+    background:url(sur.png) repeat-x;
+    height:54px;
+}
+
+table.cute-balloon-yellow span.pso
+{
+    background:url(pso.png) no-repeat;
+    height:54px;
+    width:100px;
+}
+
+table.cute-balloon-yellow td.pse
+{
+    background:url(pse.png) no-repeat;
+}
+
+table.cute-balloon-yellow td.content
+{
+    background:#FDEEA8;
+    padding:0px;
+    width:300px;
+    color:#666;
+}

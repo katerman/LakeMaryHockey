@@ -93,21 +93,37 @@ min-height: 500px;
 
 }
 
-#team1 span{			
+
+#players span{			
 	left:0;
 }
 
-#team2 span{			
+#goalies span{			
 	left:100px;
 }
 
-#team3 span{			
+
+
+#stands span{			
+	left:0;
+}
+
+#team1 span{			
+	left:100px;
+}
+
+#team2 span{			
 	left:200px;
+	width: 100px;
+}
+
+#team3 span{			
+	left:300px;
 	width: 100px;
 }	
 
 #team4 span{			
-	left:300px;
+	left:400px;
 	width: 100px;
 }
 

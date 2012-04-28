@@ -29,6 +29,18 @@ body {
 
 }
 
+.even {
+ background-color:#333;
+}
+
+table th {
+	color:#000;
+}
+
+h2 {
+color:#000;
+}
+
 /********** Header Styles **********/
 #header {
 	width: 800px;
@@ -51,8 +63,7 @@ body {
 
 #nav li {
 	float:left;
-	margin-left: 15px;
-	
+	margin-left: 10px;
 }
 
 .nav-msgbrd-fix  {
@@ -85,7 +96,7 @@ body {
 /********** Content Styles **********/
 #content {
 	width: 800px;
-	height: 540px;
+	min-height: 540px;
 	background-color: #333;
 	padding-top:20px;
 	margin-top:10px;
@@ -94,10 +105,60 @@ body {
 /*--------- SpecContent ---------*/
 #spec-content {
 	width: 700px;
-	height: 200px;
+	height: 300px;
 	background-color: #999;
 	border: 1px solid #fff;
 	margin: 0 auto;
+	position: relative;
+}
+
+#spec-content img {
+	display: inline;
+}
+
+#spec-content h2{
+	color:#fff;
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=2);  
+    
+    position: absolute;
+	top:0;
+	left:0;
+	display: inline;
+    
+background: -moz-linear-gradient(left,  rgba(0,0,0,0.74) 0%, rgba(0,0,0,0.55) 82%, rgba(0,0,0,0.43) 90%, rgba(0,0,0,0.16) 99%, rgba(0,0,0,0.13) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.74)), color-stop(82%,rgba(0,0,0,0.55)), color-stop(90%,rgba(0,0,0,0.43)), color-stop(99%,rgba(0,0,0,0.16)), color-stop(100%,rgba(0,0,0,0.13))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0.74) 0%,rgba(0,0,0,0.55) 82%,rgba(0,0,0,0.43) 90%,rgba(0,0,0,0.16) 99%,rgba(0,0,0,0.13) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(0,0,0,0.74) 0%,rgba(0,0,0,0.55) 82%,rgba(0,0,0,0.43) 90%,rgba(0,0,0,0.16) 99%,rgba(0,0,0,0.13) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(0,0,0,0.74) 0%,rgba(0,0,0,0.55) 82%,rgba(0,0,0,0.43) 90%,rgba(0,0,0,0.16) 99%,rgba(0,0,0,0.13) 100%); /* IE10+ */
+background: linear-gradient(left,  rgba(0,0,0,0.74) 0%,rgba(0,0,0,0.55) 82%,rgba(0,0,0,0.43) 90%,rgba(0,0,0,0.16) 99%,rgba(0,0,0,0.13) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#21000000',GradientType=1 ); /* IE6-9 */
+
+
+
+}
+
+#spec-content p{
+	font-size: 1.6em;
+	text-shadow: 2px 1px 1px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=2);  
+    
+	position: absolute;
+	bottom:0;
+	right: 0;
+	display: inline;
+
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(167,0,0,0.02) 1%, rgba(167,0,0,0.53) 25%, rgba(167,0,0,0.75) 97%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(167,0,0,0.02)), color-stop(25%,rgba(167,0,0,0.53)), color-stop(97%,rgba(167,0,0,0.75))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(167,0,0,0.02) 1%,rgba(167,0,0,0.53) 25%,rgba(167,0,0,0.75) 97%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(167,0,0,0.02) 1%,rgba(167,0,0,0.53) 25%,rgba(167,0,0,0.75) 97%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(167,0,0,0.02) 1%,rgba(167,0,0,0.53) 25%,rgba(167,0,0,0.75) 97%); /* IE10+ */
+background: linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(167,0,0,0.02) 1%,rgba(167,0,0,0.53) 25%,rgba(167,0,0,0.75) 97%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#bfa70000',GradientType=1 ); /* IE6-9 */
+
+
+
 
 }
 
@@ -106,8 +167,8 @@ body {
 	float:left;
 	border: 1px solid #fff;
 	width: 387px;
-	height: 300px;
-	background-color: #999;
+	height: 200px;
+	background-color: #666;
 	margin: 10px 0 0 50px;
 }
 
@@ -116,13 +177,17 @@ body {
 	border-bottom: 1px solid #fff;
 	font-weight: bold;
 	padding-left: 10px;
+	text-shadow: 1px 1px 1px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=2);
 }
 
+
 #news li {
-	font-size: 1.0em;
-	margin: 5px 0 0 10px;
+	font-size: 0.9em;
+	padding-left:5px;
 }
-/*--------- NavPsudeo ---------*/
+
+/*--------- newsPsudeo ---------*/
 #news li:link{
 
 }
@@ -145,6 +210,7 @@ body {
 	width: 300px;
 	height: 200px;
 	margin: 10px 0 0 10px;
+	color:#fff;
 }
 
 /*************** Footer Styles *****************/
@@ -172,4 +238,127 @@ body {
 
 #footer a:active {
 	color: #333;
+}
+
+
+/************** Rules Page *********************/
+#rules {
+	background-color: #666;
+	border: 1px solid #999;
+	width: 750px;
+	margin: 0 auto;
+	line-height: 120%;
+	letter-spacing: 0;
+	overflow:auto;
+	height: 530px;
+}
+
+#rules h1 {
+	font-size: 1.6em;
+	margin: 10px 0 0 5px;
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
+
+#rules h2 {
+	font-size: 1.4em;
+	text-decoration: underline;
+	margin: 15px 0 0 5px;
+}
+
+#rules h3 {
+	color: #fff;
+	font-size: 1.2em;
+	text-decoration: underline;
+	margin: 15px 0 0 5px;
+}
+
+#rules p {
+	font-size: 1.0em;
+	margin: 15px 0 0 20px;
+	width: 80%;
+}
+
+#rules ol li {
+	font-size: 1.0em;
+	margin: 5px 0 0 30px;
+	width: 80%;
+	color:#fff;
+	list-style-type: disc;
+}
+
+#rules strong {
+	font-size: 1.0em;
+	margin: 15px 0 0 20px;
+	font-weight: bold;
+	width: 80%;
+	display: block;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/*Tables on Stats pages */
+
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 620px;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(../img/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #000;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../img/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../img/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
+#pager.pager {
+	border: 1px solid #000;
+	background-color:#666;
+	color:#000;
+	position:absolute;
+	right: 0;
+	top:0;
+	margin: 10px 42px 0 0;
+}
+
+#pager input {
+	color:#000;
+}
+
+#pager select {
+	color:#000;
 }
