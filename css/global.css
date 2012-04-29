@@ -15,7 +15,7 @@
 	font-variant: normal;
 	font-family: Helvetica, Arial, sans-serif;
 	list-style-type:none;
-	color:#fff;
+	
 }
 
 body {
@@ -26,6 +26,18 @@ body {
 	width: 800px;
 	border: 1px solid white;
 	margin: 5px auto 0;
+	color: #fff;
+	min-height: 650px;
+
+}
+
+#msg-container {
+	width: 800px;
+	border: 1px solid white;
+	margin: 5px auto 0;
+	color: #fff;
+	min-height: 670px;
+	background-color:#888;
 
 }
 
@@ -33,11 +45,11 @@ body {
  background-color:#333;
 }
 
-table th {
+#container 2table th {
 	color:#000;
 }
 
-h2 {
+#contianer h2 {
 color:#000;
 }
 
@@ -46,11 +58,11 @@ color:#000;
 	width: 800px;
 	height: 100px;
 	background-color: #333;
-	margin-bottom: 10px;
+	border-bottom: 1px solid #fff;
 }
 
 #header h1 {
-	font-size: 6em;
+	font-size: 5.5em;
 }
 
 
@@ -59,6 +71,7 @@ color:#000;
 	width: 800px;
 	height: 20px;
 	background-color: #333;
+	border-bottom:1px solid #fff;
 }
 
 #nav li {
@@ -78,11 +91,11 @@ color:#000;
 }
 
 #nav a:link{
-
+	color:#fff;
 }
 
 #nav a:visited{
-
+	color:#fff;
 }
 
 #nav a:hover{
@@ -90,7 +103,7 @@ color:#000;
 }
 
 #nav a:link{
-
+	color:#fff;
 }
 
 /********** Content Styles **********/
@@ -99,7 +112,6 @@ color:#000;
 	min-height: 540px;
 	background-color: #333;
 	padding-top:20px;
-	margin-top:10px;
 }
 
 /*--------- SpecContent ---------*/
@@ -187,6 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	padding-left:5px;
 }
 
+
 /*--------- newsPsudeo ---------*/
 #news li:link{
 
@@ -204,6 +217,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 }
 
+/*/ anchors /*/
+#news a:link{
+	color:#fff;
+}
+
+#news a:visited{
+	color:#fff;
+}
+
+#news a:hover{
+	color:#fff;
+}
+
+#news a:link{
+	color:#fff;
+}
+
+
 /*--------- calendar ---------*/
 #calendar {
 	float:left;
@@ -216,15 +247,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 /*************** Footer Styles *****************/
 #footer {
 	height: 25px;
+	width: 800px;
+	margin: 0 auto;
+	position: relative;
 }
 
-#footer p {
+#footer a {
 	font-size:0.7em;
-	color:#fff;
+	color:#fff;	
+	position: absolute;
+	bottom: 0;	
+	left: 30px;
 }
 
+#footer img.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+
+/*/ Nav Psudeo /*/
 #footer a:link {
-	color:#fff;
+	color:#ff0000;
 }
 
 #footer a:visited  {
@@ -232,7 +277,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 
 #footer a:hover {
-	color: #999;
+	color: #fff;
 	text-decoration: underline;
 }
 
@@ -313,6 +358,7 @@ table.tablesorter {
 	font-size: 8pt;
 	width: 620px;
 	text-align: left;
+	color:#000;
 }
 table.tablesorter thead tr th, table.tablesorter tfoot tr th {
 	background-color: #e6EEEE;
@@ -361,4 +407,140 @@ background-color: #8dbdd8;
 
 #pager select {
 	color:#000;
+}
+
+
+/*************** MSG BOARD **************/
+
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+
+/* ----------- My Form ----------- */
+.myform{
+width:360px;
+padding: 10px;
+margin: 10px 0 0 12px;
+color:#000;
+}
+
+/* ----------- stylized ----------- */
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+float: left;
+color:#000;
+}
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+margin-bottom:20px;
+border-bottom:solid 1px #b7ddf2;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input, #stylized textarea{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+#cap {
+float:left;
+padding:4px 2px;
+margin:2px 0 20px 10px;
+border: 0;
+}
+#stylized a img{
+border: 0;
+}
+#stylized button{
+clear:both;
+margin-left:100px;
+width:91px;
+height:32px;
+background:#666666 url(../images/submit.png) no-repeat;
+text-align:center;
+line-height:32px;
+color: transparent;
+text-transform: capitalize;
+}
+
+.error {
+	font-weight: bold;
+	color:red;
+}
+
+.success {
+	font-weight: bold;
+	color:green;
+}
+
+#messages {
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+width:350px;
+padding:14px;
+margin: 10px 0 0 10px;
+}
+
+#messages h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:12px;
+}
+
+#messages cite {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#messages ol{
+	margin: 0;
+	padding: 0 0 20px 0;
+	list-style-type: none;
+}
+
+#messages li{
+    display: block;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #ffffff;
+	color:#000;
+}
+
+#messages li p{
+	margin-top: 10px;
+}
+
+.button-link a {
+	border-style: solid;
+	border: 0;
+	text-decoration : none;
+	padding : 5px 14px;
+	background-color: #F1630E;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.button-link a:hover {
+	background-color: #C85304;
 }
