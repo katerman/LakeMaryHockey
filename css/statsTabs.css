@@ -12,9 +12,9 @@ Author:
 			/* Global Layout */
 
 #box{
-	margin: -15px auto 0;
+	margin: 0 auto;
 	width: 650px;
-	height: 530px;
+	height: 470px !important;
 	text-align: left;	
 	-moz-box-shadow: 0 0 3px #aaa;
 	-webkit-box-shadow: 0 0 3px #aaa;
@@ -55,8 +55,8 @@ Author:
 
 
 #boxes{
-position: relative;
-min-height: 500px;
+	position: relative;
+	height: 480px;
 }
 
 #boxes h1, #boxes h2, #boxes h3 , #boxes p{

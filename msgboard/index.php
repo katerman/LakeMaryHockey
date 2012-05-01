@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>LMH - Message Board</title>
+<title>Lake Mary Hockey - Message Board</title>
 
 <link href="../css/global.css" rel="stylesheet" type="text/css" />
 
@@ -159,7 +159,7 @@ var sec_code = $.ajax({
 			 	<li><a href="../playerstats.html#players">Players</a></li>
 				<li><a href="#">Pictures</a></li>
 				<li><a href="../rules.html">Rules</a></li>
-				<li><a href="#">Awards</a></li>
+				<li><a href="..awards.html">Awards</a></li>
 				<li><a href="../schedule.html">Schedule</a></li>
 				<li><a href="#">Paying</a></li>
 				<li class="nav-msgbrd-fix" ><a class="active" href="#">Message Boards</a></li>
