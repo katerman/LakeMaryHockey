@@ -157,55 +157,57 @@ var sec_code = $.ajax({
 				<li><a href="../index.html">Home</a></li>
 			 	<li><a href="../standings.htm#stands">Teams</a></li>
 			 	<li><a href="../playerstats.html#players">Players</a></li>
-				<li><a href="#">Pictures</a></li>
+				<li><a href="http://www.facebook.com/groups/242140609216858/photos/">Pictures</a></li>
 				<li><a href="../rules.html">Rules</a></li>
-				<li><a href="..awards.html">Awards</a></li>
+				<li><a href="../awards.html#awards">Awards</a></li>
 				<li><a href="../schedule.html">Schedule</a></li>
-				<li><a href="#">Paying</a></li>
+				<li><a href="#">Payment</a></li>
 				<li class="nav-msgbrd-fix" ><a class="active" href="#">Message Boards</a></li>
 		</div>
-
-	<div id="stylized" class="myform">
-		<form id="form" name="form" action="#" method="post">
-		<h1>Post your message</h1>
-		<p id="error">Please complete the form below</p>
-		
-		<label>Name</label>
-		<input name="name" type="text" id="name" />
-		
-		<label>Email</label>
-		<input name="email" type="text" id="email" />
-		
-		<label>Message <span class="small">(Character count: <span id="count">0</span>)</span></label>
-		<textarea name="message" id="message"></textarea>
-		<label>Security Code
-		<span class="small">Click to refresh</span>
-		</label>
-		<a href="#" onclick="refreshCaptcha();"><span id="cap"></span></a>
-		<label>Re-type Security Code
-		<span class="small">(case sensitive)</span>
-		</label>
-		<input name="captcha_code" type="text" id="captcha_code" size="10" maxlength="10" />
-		<button type="submit" class="button">Submit</button>
-		<div class="spacer"></div>
-		</form>
-	</div>
-
-<!--<input type="button" name="button" class="refresh" id="button" value="Refresh Messages" style="margin-bottom: 10px"/>-->
-
-	<div style="float:left">
-		<div id="messages" class="messages">
-		<!-- posted messages display here -->
+	<div id="content">
+		<div id="stylized" class="myform">
+			<form id="form" name="form" action="#" method="post">
+			<h1>Post your message</h1>
+			<p id="error">Please complete the form below</p>
+			
+			<label>Name</label>
+			<input name="name" type="text" id="name" />
+			
+			<label>Email</label>
+			<input name="email" type="text" id="email" />
+			
+			<label>Message <span class="small">(Character count: <span id="count">0</span>)</span></label>
+			<textarea name="message" id="message"></textarea>
+			<label>Security Code
+			<span class="small">Click to refresh</span>
+			</label>
+			<a href="#" onclick="refreshCaptcha();"><span id="cap"></span></a>
+			<label>Re-type Security Code
+			<span class="small">(case sensitive)</span>
+			</label>
+			<input name="captcha_code" type="text" id="captcha_code" size="10" maxlength="10" />
+			<button type="submit" class="button">Submit</button>
+			<div class="spacer"></div>
+			</form>
+		</div>
+	
+	<!--<input type="button" name="button" class="refresh" id="button" value="Refresh Messages" style="margin-bottom: 10px"/>-->
+	
+			<div style="float:left">
+				<div id="messages" class="messages">
+				<!-- posted messages display here -->
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
 
-	<div id="footer"><!-- Start Footer -->
-		<p>
-		<img src="../images/badaslogo.png" alt="badas logo!"/>
-		<a href="http://www.badasdesign.com">Badas Design 2012&copy;</a>
-		</p>
-	</div><!-- End Footer -->	
+		<div id="footer"><!-- Start Footer -->
 
+			<img class="footer" src="../images/badaslogo.png" alt="badas logo!"/>
+			<a href="http://www.badasdesign.com">
+				Badas Design 2012&copy;
+			</a>
+
+		</div><!-- End Footer -->	
 </body>
 </html>

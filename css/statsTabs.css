@@ -93,7 +93,40 @@ Author:
 
 }
 
+/*Awards tabs*/
+#awards span{			
+	left:0;
+}
 
+#goals span{			
+	left:100px;
+}
+
+#assists span{			
+	left:200px;
+	width: 100px;
+}
+
+#mvp span{			
+	left:300px;
+	width: 100px;
+}	
+
+#goalie span{			
+	left:400px;
+	width: 100px;
+}
+
+#leaguechamps span{			
+	left:500px;
+	width: 100px;
+}
+
+
+
+
+
+/*Player stats tabs*/
 #players span{			
 	left:0;
 }
@@ -103,7 +136,7 @@ Author:
 }
 
 
-
+/*Standings tabs*/
 #stands span{			
 	left:0;
 }
@@ -126,6 +159,8 @@ Author:
 	left:400px;
 	width: 100px;
 }
+
+/* Box*/
 
 .box ul, .box p{
 	line-height: 1.5em;

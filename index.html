@@ -10,8 +10,8 @@
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 		
 		<link rel="stylesheet" type="text/css" href="css/global.css" />
-		<link href="css/lightbox.css" type="text/css" rel="stylesheet" />
-		<link rel="stylesheet" href="css/dropdown.css" type="text/css" media="screen, projection"/>
+		<link rel="stylesheet" type="text/css"  href="css/lightbox.css" />
+		<link rel="stylesheet" href="css/slider.css" type="text/css"/>
 		
 		<link rel="stylesheet" type="text/css" href="css/cute-balloon.css" />
 		<link rel="stylesheet" type="text/css" href="css/cute-yellow.css" />
@@ -32,7 +32,16 @@
 
 		<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
 		<script src="js/lightbox.js" type="text/javascript"></script>
-
+		<script type="text/javascript" src="js/easySlider1.7.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true, 
+				continuous: true,
+				numeric: true
+			});
+		});	
+	</script>
 	</head>
 	
 	<body>
@@ -73,11 +82,11 @@
 				<li><a class="active" href="index.html">Home</a></li>
 			 	<li><a href="standings.html#stands">Teams</a></li>
 			 	<li><a href="playerstats.html#players">Players</a></li>
-				<li><a href="#">Pictures</a></li>
+				<li><a href="http://www.facebook.com/groups/242140609216858/photos/">Pictures</a></li>
 				<li><a href="rules.html">Rules</a></li>
-				<li><a href="awards.html">Awards</a></li>
+				<li><a href="awards.html#awards">Awards</a></li>
 				<li><a href="schedule.html">Schedule</a></li>
-				<li><a href="#">Paying</a></li>
+				<li><a href="#">Payment</a></li>
 				<li class="nav-msgbrd-fix"><a href="/msgboard/">Message Boards</a></li>
 			</ol>
 		</div>
@@ -85,21 +94,45 @@
 		<div id="content"><!--start -content-->
 		
 			<div id="spec-content">
+		<div id="slider">
+			<ul>	
 			
-				<a href="images/spec-content-full/lmhl-bcvschiefs-game1.jpg" 																	rel="lightbox[Game1]" title="Bone Crushers crush Chiefs in a 8 to 7 OT victory">
+			<!--First Spec slide-->
+				<li>
+					<a href="images/spec-content-full/Lakemary-spec-wk2(bcvswcbdfy).jpg" rel="lightbox[Game1]" title="Farrells effort helps pull the Bone Crushers to first place and beat the browns.">
+					<img src="images/spec-content-preview/Lakemary-spec-wk2(bcvswcbdfy-prev).jpg" alt="Farrells effort helps pull the Bone Crushers to first place and beat the browns."/>
+					</a>
+				</li>			
+			
+			
+			<!--Second Spec slide-->
+				<li>
+			
+					<img src="images/spec-content-preview/Lakemary-spec-wk2(vote).jpg" alt="Voting options"/>
 				
-					<img src="images/spec-content-preview/lmhl-bcvschiefs-game1(preview).jpg" alt="Game one bone crushers and 					Chiefs"/>
-				</a>
+				</li>
+				
+			<!--Third Spec slide-->						
+				<li>
+					<a href="images/spec-content-full/lmhl-bcvschiefs-game1.jpg" rel="lightbox[Game1]" title="Bone Crushers crush Chiefs in a 8 to 7 OT victory">
+						<img src="images/spec-content-preview/Lakemary-spec-wk1.jpg" alt="Game one bone crushers and Chiefs"/>
+					</a>
+				</li>
+				
+				
+					
+			</ul>
+		</div>			
+			
 
-				<h2> BoneCrushers Beat Chiefs!</h2>	
-				<p> In a stunning 8 to 7 overtime victory</p>	
 			</div>
 			
 			<div id="news-container"><!--start news-container-->
 			<div id="news"><!--start news--->
 			<h1>News</h1>
 			<ol>
-			
+				<li>Chiefs lose even after scoring first, 10 to 1</li>
+				<li class="even">Bone Crushers beat WCBDFY 15 to 9</li>
 				<li>
 					<p>
 						<a href="" class="cute-balloon gray"  
