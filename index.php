@@ -1,6 +1,8 @@
+	<?php require("css_browser_selector.php"); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" class="<?php echo css_browser_selector() ?>">
+
 	<head>
 		<title>Lake Mary Hockey - Home</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,13 +13,6 @@
 		
 		<link rel="stylesheet" type="text/css" href="css/global.css" />
 		<link rel="stylesheet" type="text/css"  href="css/lightbox.css" />
-		<link rel="stylesheet" href="css/slider.css" type="text/css"/>
-		
-		<link rel="stylesheet" type="text/css" href="css/cute-balloon.css" />
-		<link rel="stylesheet" type="text/css" href="css/cute-yellow.css" />
-		<link rel="stylesheet" type="text/css" href="css/cute-gray.css" />
-		
-		<link rel="stylesheet" type="text/css" href="cute-balloon/cute-balloon.css" />
 
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -27,8 +22,7 @@
 	
 
 
-		<script src="js/balloon-jquery.js" type="text/javascript"></script>
-		<script src="cute-balloon/cute-balloon.js" type="text/javascript"></script>
+		<script src="js/css_browser_selector.js" type="text/javascript"></script>
 
 		<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
 		<script src="js/lightbox.js" type="text/javascript"></script>
@@ -79,7 +73,7 @@
 	
 		<div id="nav">
 			<ol>
-				<li><a class="active" href="index.html">Home</a></li>
+				<li><a class="active" href="index.php">Home</a></li>
 			 	<li><a href="standings.html#stands">Teams</a></li>
 			 	<li><a href="playerstats.html#players">Players</a></li>
 				<li><a href="http://www.facebook.com/groups/242140609216858/photos/">Pictures</a></li>
@@ -132,8 +126,9 @@
 			
 			<div id="news-container"><!--start news-container-->
 			<div id="news"><!--start news--->
-			<h1>News</h1>
-			<ol>
+			<h1><a href="login.php">News</a></h1>
+			<!--
+<ol>
 				<li>Chiefs lose even after scoring first, 10 to 1</li>
 				<li class="even">Bone Crushers beat WCBDFY 15 to 9</li>
 				<li>
@@ -169,6 +164,21 @@
 
 
 			</ol>
+-->
+
+				<div id="news-stories">
+					<ol>			
+							<?
+							include("dbconnect.php");
+							$getnews = mysql_query("select * from news ORDER BY id DESC");
+							while($r=mysql_fetch_array($getnews)){
+							extract($r);
+							echo("<b>$title</b> on $date<BR>$news <Br/>");
+							
+							}
+							?>
+					</ol>
+				</div>
 			</div><!--end news-->
 			</div><!--end news-container-->
 			

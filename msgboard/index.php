@@ -154,7 +154,7 @@ var sec_code = $.ajax({
 		</div>
 	
 		<div id="nav">
-				<li><a href="../index.html">Home</a></li>
+				<li><a href="../index.php">Home</a></li>
 			 	<li><a href="../standings.htm#stands">Teams</a></li>
 			 	<li><a href="../playerstats.html#players">Players</a></li>
 				<li><a href="http://www.facebook.com/groups/242140609216858/photos/">Pictures</a></li>

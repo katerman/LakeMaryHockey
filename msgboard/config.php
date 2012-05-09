@@ -10,7 +10,7 @@ $username = "a4610366_admin"; //username for database here
 $password = "halo12"; //password for database here
 $database =  "a4610366_board"; //name of your database here
 
-$limit = 5; //entries displayed per page
+$limit = 4; //entries displayed per page
 $badwords = array("fuck","bitch","cunt");  //add more bad words here
 
 $mysql_link = mysql_pconnect($host, $username, $password) 
