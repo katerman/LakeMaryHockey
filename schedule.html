@@ -5,16 +5,33 @@
 		<title>Lake Mary Hockey - Schedule</title>
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/global.css" />
-		<link href="css/lightbox.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
 		<link rel="stylesheet" href="css/dropdown.css" type="text/css" media="screen, projection"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<!--[if lte IE 7]>
        		<link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
    		<![endif]-->
-	
-		<script src="js/jquery-1.7.2.min.js"></script>
-		<script src="js/lightbox.js"></script>
 
+   		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		
+		<script src="js/popup.js" type="text/javascript"></script>
+		<!--google analytics-->
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-31913398-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		<!--google analytics-->
+		
 	</head>
 	
 	<body>
@@ -32,7 +49,7 @@
 				<li><a href="rules.html">Rules</a></li>
 				<li><a href="awards.html#awards">Awards</a></li>
 				<li><a class="active" href="schedule.html">Schedule</a></li>
-				<li><a href="#">Payment</a></li>
+				<li id="payment"><a href="">Payment</a></li>
 				<li class="nav-msgbrd-fix"><a href="/msgboard/">Message Boards</a></li>
 		</div>
 		
@@ -54,6 +71,7 @@
 	
 	</body>
 </html> 
+
 
 
 

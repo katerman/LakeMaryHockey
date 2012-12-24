@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /public_html/
+Disallow: /public_html/beta/

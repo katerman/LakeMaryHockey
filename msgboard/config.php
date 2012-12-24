@@ -6,7 +6,7 @@ die ('Do not load this page directly');
 
 $host = "mysql15.000webhost.com";
 //$host = "yourserver.net";
-$username = "a4610366_admin"; //username for database here
+$username = "a4610366_board"; //username for database here
 $password = "halo12"; //password for database here
 $database =  "a4610366_board"; //name of your database here
 

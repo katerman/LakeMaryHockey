@@ -4,10 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Lake Mary Hockey - Message Board</title>
 
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
 <link href="../css/global.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
 
-<script language="JavaScript" type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
 <script language="JavaScript" type="text/javascript" src="../js/jquery.timer.js"></script>
+
 <script type="text/JavaScript">
 
 
@@ -143,10 +149,13 @@ var sec_code = $.ajax({
 });
 
 </script>
+
+<script type="text/javascript" src="../js/popup.js"></script>
+
 </head>
 
 <body>
-
+	<?php include_once("../analyticstracking.php") ?>
 	<?php //echo "Page loaded on " . date("d/m/y : H:i:s", time()); ?>
 <div id="msg-container">
 	<div id="header">
@@ -155,16 +164,16 @@ var sec_code = $.ajax({
 	
 		<div id="nav">
 				<li><a href="../index.php">Home</a></li>
-			 	<li><a href="../standings.htm#stands">Teams</a></li>
+			 	<li><a href="../standings.html#stands">Teams</a></li>
 			 	<li><a href="../playerstats.html#players">Players</a></li>
 				<li><a href="http://www.facebook.com/groups/242140609216858/photos/">Pictures</a></li>
 				<li><a href="../rules.html">Rules</a></li>
 				<li><a href="../awards.html#awards">Awards</a></li>
 				<li><a href="../schedule.html">Schedule</a></li>
-				<li><a href="#">Payment</a></li>
-				<li class="nav-msgbrd-fix" ><a class="active" href="#">Message Boards</a></li>
+				<li id="payment"><a href="">Payment</a></li>
+				<li class="nav-msgbrd-fix" ><a class="active"href="#">Message Boards</a></li>
 		</div>
-	<div id="content">
+	<div id="msg-content">
 		<div id="stylized" class="myform">
 			<form id="form" name="form" action="#" method="post">
 			<h1>Post your message</h1>

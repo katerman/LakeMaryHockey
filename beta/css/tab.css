@@ -1,0 +1,34 @@
+.menu { 
+	padding: 0; 
+	clear: both; 
+}
+		
+.menu li { 
+	display: inline; 
+}
+.menu li a { 
+	background: #999; 
+	padding: 10px; 
+	float:left; 
+	border-right: 1px solid #000; 
+	border-bottom: none; 
+	text-decoration: none; 
+	color: #fff; 
+	font-weight: bold;
+}
+
+.menu li.active a { 
+background: #555; 
+}
+
+.content { 
+	float: left; 
+	clear: both; 
+	border: 1px solid #666; 
+	border-top: none; 
+	border-left: none; 
+	background: #333; 
+	padding: 10px 20px 20px; 
+	width: 400px; 
+	
+}

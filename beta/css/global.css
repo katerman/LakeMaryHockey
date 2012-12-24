@@ -249,6 +249,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', e
 }
 
 #news {
+	
 	height: 100%;
 	margin: 0;
 	background-repeat: no-repeat;
@@ -265,19 +266,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
 
 /*news section header*/
 #news h1 {
-	width: 350px;
 	font-size: 1.4em;
 	border-bottom: 1px solid #fff;
 	font-weight: bold;
 	padding-left: 10px;
 	text-shadow: 1px 1px 1px #000000;
     filter: dropshadow(color=#000000, offx=1, offy=2);
-    
 }
 
 /*news titles*/
 #news h2 {
-	width: 350px;
 	margin:0 0 0 5px;
 	font-size: 1.1em;
 	font-weight: bold;
@@ -287,25 +285,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1affffff', e
 
 /*Title*/
 #news span {
-	width: 350px;
 	float:left;
 	border-top:1px solid #fff;
 	width: 100%;
 	margin-left: -5px;
 	text-indent: 5px;
-	text-transform: lowercase;
 }
 
 /*subtext paragraphs*/
 #news p {
-	width: 350px;
 	margin:0 0 0 5px;
 	font-size: 1.0em;
-	text-transform: lowercase;
-}
-
-#news p:first-letter {
-	text-transform: uppercase;
 }
 
 
